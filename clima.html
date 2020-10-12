@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="black">
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo left">Logo</a>
+                <a href="#" data-target="menu-responsive" class="sidenav-trigger right"><i class="material-icons">storage</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="sismos.html"><i class="material-icons left">multiline_chart</i>Sismos</a></li>
+                    <li><a href="clima.html"><i class="material-icons left">wb_sunny</i>Clima</a></li>
+                    <ul id="id_drop" class="dropdown-content">
+                        <li><a href="index.html">A</a></li>
+                        <li><a href="index.html">A</a></li>
+                        <li class="divider"></li>
+                        <li><a href="index.html">A</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="menu-responsive">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sismos.html">Sismos</a></li>
+        <li><a href="clima.html">Clima</a></li>
+    </ul>
+
+    <div class="section"></div>
+
+    <div class="container center">
+        <div class="row valign-wrapper">
+            <div class="col s12 m6 ">
+                <div class="card indigo darken-1 z-depth-4">
+                    <div class="card-content white-text">
+                        <p class="center-align">La información es generalizada</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <img src="img/decorativoclima.svg" class="responsive-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="container center">
+        <div class="row">
+            <div id="div-cards-weather">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/APIClima.js"></script>
+    <script src="js/UIClima.js"></script>
+    <script src="js/appClima.js"></script>
+    <script src="js/components.js"></script>
+</body>
+</html>

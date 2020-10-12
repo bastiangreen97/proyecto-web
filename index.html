@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="black">
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo left">Logo</a>
+                <a href="#" data-target="menu-responsive" class="sidenav-trigger right"><i class="material-icons">storage</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="sismos.html"><i class="material-icons left">multiline_chart</i>Sismos</a></li>
+                    <li><a href="clima.html"><i class="material-icons left">wb_sunny</i>Clima</a></li>
+                    <ul id="id_drop" class="dropdown-content">
+                        <li><a href="index.html">A</a></li>
+                        <li><a href="index.html">A</a></li>
+                        <li class="divider"></li>
+                        <li><a href="index.html">A</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="menu-responsive">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sismos.html">Sismos</a></li>
+        <li><a href="clima.html">Clima</a></li>
+    </ul>
+
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 m4 l4">
+                    <div class="card pink darken-1">
+                        <div class="card-content white-text z-depth-4">
+                            <span class="card-title">Titulo 1</span>
+                            <p class="center-align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, nostrum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="card indigo darken-1 z-depth-4">
+                        <div class="card-content white-text">
+                            <span class="card-title">Titulo 2</span>
+                            <p class="center-align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, nostrum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="card cyan darken-1 z-depth-4">
+                        <div class="card-content white-text">
+                            <span class="card-title">Titulo 3</span>
+                            <p class="center-align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, nostrum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Sección para ver información en páginas de sismos y clima -->
+        <div class="section">
+            <div class="row valign-wrapper animate__animated animate__backInLeft">
+                <div class="col s12 m12 l6">
+                    <img class="responsive-img" src="img/inicioclima.svg">
+                </div>
+                <div class="col s12 m12 l6"> 
+                    <div class="center">
+                        <h3 class="titles">Clima en Chile</h3>
+                        <a id="btn-clima" href="clima.html" class="btn deep-purple darken-2 z-depth-4 waves-effect waves-light full-width">Ver información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="row valign-wrapper animate__animated animate__backInRight">
+                <div class="col s12 m12 l6 push-l6"><img class="responsive-img" src="img/alertasismos.svg"></div>
+                <div class="col s12 m12 l6 pull-l6">
+                    <div class="center">
+                        <h3 class="titles">Últimos sismos registrados</h3>
+                        <a id="btn-sismos" href="sismos.html" class="btn deep-purple darken-2 z-depth-4 waves-effect waves-light full-width">Ver información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/components.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/* Hoja de estilo personalizada para no modificar los archivos css de Materialize */
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+/* Fondo gradiente */
+body{
+    background: rgb(126,53,181);
+    background: linear-gradient(0deg, rgba(126,53,181,1) 0%, rgba(148,245,255,1) 100%);
+}
+
+.titles{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Para que los elementos ocupen el 100% de ancho disponible */
+.full-width{
+    width: 100%;
+}
+
+.justify-text{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+@media only screen and (max-width: 600px) { .row.valign-wrapper { display: inherit; } }
+
+
+
+
