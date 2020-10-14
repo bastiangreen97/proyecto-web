@@ -1,14 +1,38 @@
 /* Hoja de estilo personalizada para no modificar los archivos css de Materialize */
 /* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Livvic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 /* Fondo gradiente */
 body{
     background: rgb(126,53,181);
     background: linear-gradient(0deg, rgba(126,53,181,1) 0%, rgba(148,245,255,1) 100%);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main{
+    flex: 1 0 auto;
 }
 
 .titles{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+.card-content span{
+    font-family: 'Nunito', sans-serif;
+}
+
+.card-content p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.icon-card{
+    width: 46px;
+    height: 46px;
+    margin-bottom: 5px;
 }
 
 /* Para que los elementos ocupen el 100% de ancho disponible */
@@ -20,6 +44,7 @@ body{
     text-align: justify;
     text-justify: inter-word;
 }
+
 
 @media only screen and (max-width: 600px) { .row.valign-wrapper { display: inherit; } }
 
