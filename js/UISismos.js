@@ -49,7 +49,7 @@ class UISismos{
             this.markers.addLayer(marker); 
 
             cards += `<div class="col s12 m6 l6">
-                        <div class="card pink darken-1">
+                        <div class="card indigo lighten-1">
                         <div class="card-content white-text z-depth-4">
                             <span class="card-title">Fecha: ${Fecha}</span>
                             <p>Profundidad: ${Profundidad}</p>

@@ -19,12 +19,19 @@ class UIClima{
             
             const {Estacion, HoraUpdate, Temp, Humedad, Estado} = element;
 
-            if(Temp <= 15){
-                auxtemp = 'blue';
-            }else if(Temp > 15 && Temp < 25){
-                auxtemp = 'purple';
+            if(Temp < 0){
+                auxtemp = 'indigo darken-4';
             }
-            else if(Temp >= 25){
+            else if(Temp < 12){
+                auxtemp = 'blue darken-1';
+            }
+            else if(Temp >= 12 && Temp < 20){
+                auxtemp = 'light-green darken-2';
+            }
+            else if(Temp >= 20 && Temp < 27 ){
+                auxtemp = 'orange';
+            }
+            else if(Temp >= 20 && Temp < 27 ){
                 auxtemp = 'red';
             }
 
@@ -32,10 +39,11 @@ class UIClima{
                 <div class="col s12 m6 l4">
                     <div class="card ${auxtemp} darken-1">
                         <div class="card-content white-text z-depth-4">
-                        <p class="full-width truncate"><i class="material-icons left">timer</i>Hora: ${HoraUpdate}</p>
-                        <p class="full-width truncate"><i class="material-icons left">graphic_eq</i>Temperatura: ${Temp}</p>
-                        <p class="full-width truncate"><i class="material-icons left">bubble_chart</i>Humedad: ${Humedad}</p>
-                        <p class="full-width truncate"><i class="material-icons left">transform</i>Estado: ${Estado}</p>
+                            <span class="card-title">${Estacion}</span>
+                            <p class="full-width truncate"><i class="material-icons left">timer</i>Hora: ${HoraUpdate}</p>
+                            <p class="full-width truncate"><i class="material-icons left">graphic_eq</i>Temperatura: ${Temp}</p>
+                            <p class="full-width truncate"><i class="material-icons left">bubble_chart</i>Humedad: ${Humedad}</p>
+                            <p class="full-width truncate"><i class="material-icons left">transform</i>Estado: ${Estado}</p>
                         </div>
                     </div>
                 </div>

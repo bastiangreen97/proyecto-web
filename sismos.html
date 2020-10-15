@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sismos</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
     integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
     crossorigin=""/>
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <div class="navbar-fixed">
@@ -40,12 +41,12 @@
     </ul>
 
     <div class="container">
-        <div class="section">
+        <div class="section animate__animated animate__backInDown">
             <div class="full-width titles"><h3 class="center-align">Conceptos</h3></div>
             <div class="row center">
                 <div class="col s12 m12 l4">
-                    <div class="card pink darken-1">
-                        <div class="card-content white-text z-depth-4">
+                    <div class="card pink darken-2 z-depth-4">
+                        <div class="card-content white-text">
                             <span class="card-title">Profundidad</span>
                             <img src="img/iconosismo1.svg" class="icon-card">
                             <p class="justify-text"> La profundidad es la distancia medida en kilómetros, desde el hipocentro (Es el punto donde se origina la liberación de energía) hasta la superficie terrestre.</p>
@@ -53,11 +54,11 @@
                     </div>
                 </div>
                 <div class="col s12 m12 l4">
-                    <div class="card indigo lighten-1 z-depth-4">
+                    <div class="card purple darken-2 z-depth-4">
                         <div class="card-content white-text">
                             <span class="card-title">Magnitud</span>
                             <img src="img/iconosismo2.svg" class="icon-card">
-                            <p class="justify-text">La magnitud se puede basar en 2 escalas que miden la energía liberada por un sismo. Estas escalas son: Escala sismológica de Richter (MI) y Escala sismológica de momento (MW)</p>
+                            <p class="justify-text">La magnitud se puede basar en 2 escalas que miden la energía liberada por un sismo. Estas escalas son: Escala sismológica de Richter (MI) y Escala sismológica de momento (MW).</p>
                         </div>
                     </div>
                 </div>
@@ -66,14 +67,14 @@
                         <div class="card-content white-text">
                             <span class="card-title">Referencia geográfica</span>
                             <img src="img/iconosismo4.svg" class="icon-card">
-                            <p class="justify-text">La referencia geográfica muestra la zona o ciudad más cercana a la ubicación del epicentro (Es el punto ubicado en la superficie terrestre, en el cual llega la energía liberada desde el hipocentro) </p>
+                            <p class="justify-text">La referencia geográfica muestra la zona o ciudad más cercana a la ubicación del epicentro (Es el punto ubicado en la superficie terrestre, en el cual llega la energía liberada desde el hipocentro).</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row center">
                 <div class="col s12 m12 l6">
-                    <div class="card cyan darken-1 z-depth-4 full">
+                    <div class="card indigo darken-4 z-depth-4 full">
                         <div class="card-content white-text">
                             <span class="card-title">Escala de richter</span>
                             <img src="img/iconosismo3.svg" class="icon-card">
@@ -93,7 +94,7 @@
         </div>
 
         <div class="section hide-on-small-only">
-            <div class="full-width"><h3 class="titles center">Últimos sismos registrados</h3></div>
+            <div class="full-width"><h3 class="titles center-align">Últimos sismos registrados</h3></div>
             <div class="row">
                 <div class="col s12">
                     <table class="centered highlight responsive-table">
@@ -112,6 +113,7 @@
         </div>
 
         <div class="section hide-on-med-and-up">
+            <div class="full-width"><h3 class="titles center">Últimos sismos registrados</h3></div>
             <div class="row">
                 <div id="div-cards">
                     <!-- Contenido cartas informativas -->
@@ -122,8 +124,8 @@
         <div class="section center">
             <div class="row valign-wrapper">
                 <div class="col s12 m12 l4">
-                    <h3 class="titles">Ubicaciones: </h3>
-                    <p class="justify-text">En este mapa se muestran las ubicaciones de los sismos registrados en la tabla anterior, en cada pin o cono se muestran los datos individuales</p>
+                    <h3 class="titles">Ubicaciones </h3>
+                    <p class="justify-text">En este mapa se muestran las ubicaciones de los sismos registrados en la tabla anterior, en cada pin/cono se muestran los datos individuales.</p>
                 </div>
                 <div class="col s12 m12 l8">
                         <div id="div-map" style="height: 400px;" class="z-depth-4">
