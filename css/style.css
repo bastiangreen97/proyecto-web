@@ -1,13 +1,14 @@
 /* Hoja de estilo personalizada para no modificar los archivos css de Materialize */
 /* Fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Livvic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
 /* Fondo gradiente */
 body{
-    background: rgb(126,53,181);
-    background: linear-gradient(0deg, rgba(126,53,181,1) 0%, rgba(148,245,255,1) 100%);
+    background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -18,15 +19,17 @@ main{
 }
 
 .titles{
-    font-family: 'Encode Sans Condensed', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
 }
 
-.card-content span{
-    font-family: 'Nunito', sans-serif;
+.card-content span.card-title{
+    font-family: 'Spartan', sans-serif;
+    font-size: 18px;
 }
 
 .card-content p{
     font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
 }
 
 .icon-card{
