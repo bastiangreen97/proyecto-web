@@ -31,7 +31,7 @@ class UIClima{
             else if(Temp >= 20 && Temp < 27 ){
                 auxtemp = 'orange';
             }
-            else if(Temp >= 20 && Temp < 27 ){
+            else if(Temp >= 27){
                 auxtemp = 'red';
             }
 
