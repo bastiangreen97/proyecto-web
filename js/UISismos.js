@@ -25,6 +25,7 @@ class UISismos{
         this.api.getInformation().then(info => {
             const result = info.resultJSON;
             this.showPinsAndCards(result);
+            this.showChart(result);
         });
     }
 
@@ -71,6 +72,47 @@ class UISismos{
         document.getElementById('table-information').innerHTML = infotable;
 
         this.markers.addTo(this.mapDiv);
+    }
+
+    showChart(info){
+        const chartline = document.getElementById('lineChartSismos');
+        const xs = [];
+        const ys = [];
+
+        info.forEach(elements => {
+                const {Magnitud, RefGeografica} = elements;
+                xs.push(RefGeografica);
+                ys.push(parseFloat(Magnitud));
+            })
+
+        let lineChart = new Chart(chartline, {
+            type: 'line',
+            data: {
+                labels: xs,
+                datasets: [
+                    {
+                        label: "Magnitud",
+                        fill: false,
+                        lineTension: 0.1,
+                        backgroundColor: "#6A2993",
+                        borderColor: "#6A2993",
+                        borderCapStyle: 'butt',
+                        borderDash: [],
+                        borderDashOffset: 0.0,
+                        borderJoinStyle: 'miter',
+                        pointBorderColor: "#FFFFFF",
+                        pointBackgroundColor: "#FFFFFF",
+                        pointBorderWidth: 1,
+                        pointHoverRadius: 5,
+                        pointHitRadius: 10,
+                        data: ys
+                    }
+                ]},
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+            });
     }
 
 }
