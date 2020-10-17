@@ -72,9 +72,16 @@ thead{
     text-justify: inter-word;
 }
 
+.chart-height{
+    height: 500px;
+}
 
-@media only screen and (max-width: 600px) { .row.valign-wrapper { display: inherit; } }
+.map-height{
+    height: 400px;
+}
 
+
+@media only screen and (max-width: 600px) { .row.valign-wrapper { display: inherit; }}
 
 
 

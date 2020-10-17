@@ -7,6 +7,8 @@ class UIClima{
         this.api.getInformation().then(info => {
             const result = info.resultJSON;
             this.showCards(result);
+            this.showChart(result);
+            this.showChart2(result);
         });
     }
 
@@ -50,5 +52,92 @@ class UIClima{
             `;
         });
         document.getElementById('div-cards-weather').innerHTML = cards;
+    }
+
+    showChart(info){
+        const chartbar = document.getElementById('barChartClima');
+        const chartbar2 = document.getElementById('barChartClima2');
+
+        const xs = [];
+        const ys = [];
+        const color = [];
+        const hum = [];
+
+        info.forEach(elements => {
+                const {Estacion, Temp, Humedad} = elements;
+                xs.push(Estacion);
+                ys.push(Temp);
+                if(Temp < 0){
+                    color.push('#3445C5');
+                }
+                else if(Temp < 12){
+                    color.push('orange');
+                }
+                else if(Temp >= 12 && Temp < 20){
+                    color.push('red');
+                }
+                else if(Temp >= 20 && Temp < 27 ){
+                    color.push('yellow');
+                }
+                else if(Temp >= 27){
+                    color.push('pink');
+                }
+                hum.push(Humedad);
+            })
+
+
+        let horizontalBar1 = new Chart(chartbar, {
+            type: 'horizontalBar',
+            data: {
+                labels: xs,
+                datasets: [{
+                    label: 'Temperaturas',
+                    backgroundColor: color,
+                    barPercentage: 0.5,
+                    barThickness: 6,
+                    maxBarThickness: 8,
+                    minBarLength: 3,
+                    data: ys,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+            });
+    }
+
+    showChart2(info){
+        const chartbar = document.getElementById('barChartClima2');
+        const xs = [];
+        const color = [];
+        const hum = [];
+
+        info.forEach(elements => {
+                const {Estacion, Humedad} = elements;
+                xs.push(Estacion);
+                hum.push(Humedad);
+            })
+
+
+        let horizontalBar1 = new Chart(chartbar, {
+            type: 'horizontalBar',
+            data: {
+                labels: xs,
+                datasets: [{
+                    label: 'Humedad',
+                    backgroundColor: color,
+                    barPercentage: 0.5,
+                    barThickness: 6,
+                    maxBarThickness: 8,
+                    minBarLength: 3,
+                    data: hum,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+            });
     }
 }

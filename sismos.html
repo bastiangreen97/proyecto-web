@@ -39,9 +39,10 @@
         <li><a href="sismos.html">Sismos</a></li>
         <li><a href="clima.html">Clima</a></li>
     </ul>
+
     <div class="container">
         <div class="section animate__animated animate__backInDown">
-            <div class="full-width titles"><h3 class="center-align">Conceptos</h3></div>
+            <h3 class="center titles">Conceptos</h3>
             <div class="row center">
                 <div class="col s12 m12 l4">
                     <div class="card pink darken-2 z-depth-4">
@@ -93,7 +94,7 @@
         </div>
 
         <div class="section hide-on-small-only">
-            <div class="full-width"><h3 class="titles center-align">Últimos sismos registrados</h3></div>
+            <h3 class="titles center-align">Últimos sismos registrados</h3>
             <div class="row">
                 <div class="col s12">
                     <table class="centered highlight responsive-table">
@@ -112,7 +113,7 @@
         </div>
 
         <div class="section hide-on-med-and-up">
-            <div class="full-width"><h3 class="titles center">Últimos sismos registrados</h3></div>
+            <h3 class="titles center">Últimos sismos registrados</h3>
             <div class="row">
                 <div id="div-cards">
                     <!-- Contenido cartas informativas -->
@@ -127,19 +128,21 @@
                     <p class="justify-text">En este mapa se muestran las ubicaciones de los sismos registrados en la tabla anterior, en cada pin/cono se muestran los datos individuales.</p>
                 </div>
                 <div class="col s12 m12 l8">
-                        <div id="div-map" style="height: 400px;" class="z-depth-4">
-                            <!-- Contenido mapa y pines de ubicación -->
+                        <div id="div-map" class="map-height" class="z-depth-4">
+                            <!-- Contenido mapa-->
                         </div>
                 </div>
             </div>
         </div>
 
-        <div class="section">
+        <div class="section center">
             <h3 class="titles center">Gráfico lineal de magnitudes</h3>
             <div class="row">
                 <div class="col s12">
-                    <div class="chart-container" style="height: 400px">
-                        <canvas id="lineChartSismos"></canvas>
+                    <div class="chart-container">
+                        <canvas id="lineChartSismos" class="chart-height">
+                            <!-- Contenido grafico -->
+                        </canvas>
                     </div>
                 </div>
             </div>
@@ -148,11 +151,11 @@
     <!-- Atribuciones a diseñadores e ilustradores -->
     <footer class="page-footer black">
         <div class="row">
-            <div class="col s12">
-                <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> en <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+            <div class="col s12 m6">
+                <p>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> en <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></p>
             </div>
-            <div class="col s12">
-                <div>Ilustraciones diseñadas por <a href="https://undraw.co/" title="Undraw">Freepik</a> en <a href="https://undraw.co/" title="Undraw">www.undraw.co</a></div>
+            <div class="col s12 m6">
+                <p>Ilustraciones diseñadas por <a href="https://undraw.co/" title="Undraw">Undraw</a> en <a href="https://undraw.co/" title="Undraw">www.undraw.co</a></p>
             </div>
         </div>
     </footer>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -37,74 +38,87 @@
 
     <div class="container">
         <div class="section animate__animated animate__backInDown">
-            <div class="full-width titles"><h3 class="center-align">Zonas y sus climas</h3></div>
+            <h3 class="titles center-align">Zonas y sus climas</h3>
+            <div class="row center valign-wrapper">
+                <div class="col s12 m2">
+                    <img src="img/icononorte.svg" class="icon-p">
+                </div>
+                <div class="col s12 m10">
+                    <p class="justify-text"><b>Clima del norte: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eligendi fuga expedita nam quia praesentium accusantium soluta ea excepturi provident! Veniam molestiae sapiente provident alias quas est aliquam ullam numquam!</p>
+                </div>
+            </div>
+            <div class="row center valign-wrapper">
+                <div class="col s12 m2 push-m10">
+                    <img src="img/iconocentro.svg" class="icon-p">
+                </div>
+                <div class="col s12 m10 pull-m2">
+                    <p class="justify-text"><b>Clima del centro: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eligendi fuga expedita nam quia praesentium accusantium soluta ea excepturi provident! Veniam molestiae sapiente provident alias quas est aliquam ullam numquam!</p>
+                </div>
+            </div>
+            <div class="row center valign-wrapper">
+                <div class="col s12 m2">
+                    <img src="img/iconosur.svg" class="icon-p">
+                </div>
+                <div class="col s12 m10">
+                    <p class="justify-text"><b>Clima del sur: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eligendi fuga expedita nam quia praesentium accusantium soluta ea excepturi provident! Veniam molestiae sapiente provident alias quas est aliquam ullam numquam!</p>
+                </div>
+            </div>
+            <div class="row center valign-wrapper">
+                <div class="col s12 m2 push-m10">
+                    <img src="img/iconoantartico.svg" class="icon-p">
+                </div>
+                <div class="col s12 m10 pull-m2">
+                    <p class="justify-text"><b>Clima antártico: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eligendi fuga expedita nam quia praesentium accusantium soluta ea excepturi provident! Veniam molestiae sapiente provident alias quas est aliquam ullam numquam!</p>
+                </div>
+            </div>
+            <div class="row center valign-wrapper">
+                <div class="col s12 m2">
+                    <img src="img/iconoinsular.svg" class="icon-p">
+                </div>
+                <div class="col s12 m10">
+                        <p class="justify-text"><b>Clima insular: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eligendi fuga expedita nam quia praesentium accusantium soluta ea excepturi provident! Veniam molestiae sapiente provident alias quas est aliquam ullam numquam!</p>
+                </div>
+            </div>
+            <div class="row center valign-wrapper">
+                <div class="col s12 m2 push-m10">
+                    <img src="img/iconocordillera.svg" class="icon-p">
+                </div>
+                <div class="col s12 m10 pull-m2">
+                    <p class="justify-text"><b>Clima cordillera: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eligendi fuga expedita nam quia praesentium accusantium soluta ea excepturi provident! Veniam molestiae sapiente provident alias quas est aliquam ullam numquam!</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
             <div class="row">
-                <div class="col s12">
-                    <div class="row">
-                        <div class="col s12">
-                            <div class="row center valign-wrapper">
-                                <div class="col s12 m2">
-                                    <img src="img/icononorte.svg" class="icon-p">
-                                </div>
-                                <div class="col s12 m10">
-                                    <p class="justify-text"><b>Clima del norte: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eligendi fuga expedita nam quia praesentium accusantium soluta ea excepturi provident! Veniam molestiae sapiente provident alias quas est aliquam ullam numquam!</p>
-                                </div>
-                            </div>
-                            <div class="row center valign-wrapper">
-                                <div class="col s12 m2 push-m10">
-                                    <img src="img/iconocentro.svg" class="icon-p">
-                                </div>
-                                <div class="col s12 m10 pull-m2">
-                                    <p class="justify-text"><b>Clima del centro: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eligendi fuga expedita nam quia praesentium accusantium soluta ea excepturi provident! Veniam molestiae sapiente provident alias quas est aliquam ullam numquam!</p>
-                                </div>
-                            </div>
-                            <div class="row center valign-wrapper">
-                                <div class="col s12 m2">
-                                    <img src="img/iconosur.svg" class="icon-p">
-                                </div>
-                                <div class="col s12 m10">
-                                    <p class="justify-text"><b>Clima del sur: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eligendi fuga expedita nam quia praesentium accusantium soluta ea excepturi provident! Veniam molestiae sapiente provident alias quas est aliquam ullam numquam!</p>
-                                </div>
-                            </div>
-                            <div class="row center valign-wrapper">
-                                <div class="col s12 m2 push-m10">
-                                    <img src="img/iconoantartico.svg" class="icon-p">
-                                </div>
-                                <div class="col s12 m10 pull-m2">
-                                    <p class="justify-text"><b>Clima antártico: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eligendi fuga expedita nam quia praesentium accusantium soluta ea excepturi provident! Veniam molestiae sapiente provident alias quas est aliquam ullam numquam!</p>
-                                </div>
-                            </div>
-                            <div class="row center valign-wrapper">
-                                <div class="col s12 m2">
-                                    <img src="img/iconoinsular.svg" class="icon-p">
-                                </div>
-                                <div class="col s12 m10">
-                                    <p class="justify-text"><b>Clima insular: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eligendi fuga expedita nam quia praesentium accusantium soluta ea excepturi provident! Veniam molestiae sapiente provident alias quas est aliquam ullam numquam!</p>
-                                </div>
-                            </div>
-                            <div class="row center valign-wrapper">
-                                <div class="col s12 m2 push-m10">
-                                    <img src="img/iconocordillera.svg" class="icon-p">
-                                </div>
-                                <div class="col s12 m10 pull-m2">
-                                    <p class="justify-text"><b>Clima cordillera: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eligendi fuga expedita nam quia praesentium accusantium soluta ea excepturi provident! Veniam molestiae sapiente provident alias quas est aliquam ullam numquam!</p>
-                                </div>
-                            </div>
-                        </div>
+                <h3 class="center titles">Clima de hoy:  </h3>
+                <div id="div-cards-weather">
+                    <!-- Contenido cartas clima -->
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="row valign-wrapper">
+                <div class="col s12 m6">
+                    <h4 class="titles center">Gráfico de temperaturas</h4>
+                    <div class="chart-container" style="height: 500px">
+                        <canvas id="barChartClima">
+                            <!-- Contenido grafico -->
+                        </canvas>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <h4 class="titles center">Gráfico de humedades</h4>
+                    <div class="chart-container" style="height: 500px">
+                        <canvas id="barChartClima2">
+                            <!-- Contenido grafico -->
+                        </canvas>
                     </div>
                 </div>
             </div>
         </div>
-        <section>
-            <div class="row">
-                <div class="full-width titles"><h3 class="center-align">Clima de hoy:  </h3></div>
-                <div id="div-cards-weather">
-                    
-                </div>
-            </div>
-        </section>
     </div>
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/APIClima.js"></script>
     <script src="js/UIClima.js"></script>
