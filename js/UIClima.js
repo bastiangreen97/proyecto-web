@@ -91,10 +91,10 @@ class UIClima{
             data: {
                 labels: xs,
                 datasets: [{
-                    label: 'Temperaturas',
+                    label: 'Temperatura en º Celsius',
                     backgroundColor: color,
-                    barPercentage: 0.5,
-                    barThickness: 6,
+                    barPercentage: 1,
+                    barThickness: 9,
                     maxBarThickness: 8,
                     minBarLength: 3,
                     data: ys,
@@ -125,10 +125,10 @@ class UIClima{
             data: {
                 labels: xs,
                 datasets: [{
-                    label: 'Humedad',
-                    backgroundColor: color,
-                    barPercentage: 0.5,
-                    barThickness: 6,
+                    label: 'Humedad en %',
+                    backgroundColor: 'blue',
+                    barPercentage: 1,
+                    barThickness: 9,
                     maxBarThickness: 8,
                     minBarLength: 3,
                     data: hum,
