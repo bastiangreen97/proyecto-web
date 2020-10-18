@@ -88,9 +88,62 @@
                 </div>
             </div>
         </div>
-        <div class="section">
+        <div class="section animate__animated animate__backInDown">
+            <h3 class="center titles">Conceptos</h3>
+            <div class="row center">
+                <div class="col s12 m12 l4">
+                    <div class="card pink darken-2 z-depth-4">
+                        <div class="card-content white-text">
+                            <span class="card-title">Temperatura</span>
+                            <img src="img/iconoclima1.svg" class="icon-card">
+                            <p class="justify-text">La temperatura atmosférica es uno de los elementos que constituyen el clima. Indica la cantidad de energía calorífica que hay acumulada en el aire en un momento y lugar determinados.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m12 l4">
+                    <div class="card purple darken-2 z-depth-4">
+                        <div class="card-content white-text">
+                            <span class="card-title">Humedad</span>
+                            <img src="img/iconoclima2.svg" class="icon-card">
+                            <p class="justify-text">La humedad relativa es fuertemente proporcional a la temperatura y altamente sensible a sus cambios.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m12 l4">
+                    <div class="card purple darken-4 z-depth-4">
+                        <div class="card-content white-text">
+                            <span class="card-title">Estado</span>
+                            <img src="img/iconoclima3.svg" class="icon-card">
+                            <p class="justify-text">La referencia geográfica muestra la zona o ciudad más cercana a la ubicación del epicentro (Es el punto ubicado en la superficie terrestre, en el cual llega la energía liberada desde el hipocentro).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section hide-on-small-only">
+            <h3 class="titles center">Clima de hoy</h3>
             <div class="row">
-                <h3 class="center titles">Clima de hoy:  </h3>
+                <div class="col s12">
+                    <table class="centered highlight responsive-table">
+                        <thead>
+                            <th>Localidad</th>
+                            <th>Hora</th>
+                            <th>Temperatura</th>
+                            <th>Humedad</th>
+                            <th>Estado</th>
+                        </thead>
+                        <tbody id="table-information-weather">
+                            <!-- Contenido tabla -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="section hide-on-med-and-up">
+            <div class="row">
+                <h3 class="center titles">Clima de hoy</h3>
                 <div id="div-cards-weather">
                     <!-- Contenido cartas clima -->
                 </div>

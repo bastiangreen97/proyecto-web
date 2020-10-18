@@ -14,6 +14,7 @@ class UIClima{
 
     showCards(info){
         let cards = '';
+        let table = '';
         let auxtemp = '';
         
         info.forEach(element => {
@@ -43,14 +44,25 @@ class UIClima{
                         <div class="card-content white-text z-depth-4">
                             <span class="card-title">${Estacion}</span>
                             <p class="full-width truncate"><i class="material-icons left">timer</i>Hora: ${HoraUpdate}</p>
-                            <p class="full-width truncate"><i class="material-icons left">graphic_eq</i>Temperatura: ${Temp}</p>
-                            <p class="full-width truncate"><i class="material-icons left">bubble_chart</i>Humedad: ${Humedad}</p>
+                            <p class="full-width truncate"><i class="material-icons left">graphic_eq</i>Temperatura: ${Temp}°C</p>
+                            <p class="full-width truncate"><i class="material-icons left">bubble_chart</i>Humedad: ${Humedad}%</p>
                             <p class="full-width truncate"><i class="material-icons left">transform</i>Estado: ${Estado}</p>
                         </div>
                     </div>
                 </div>
             `;
+
+            table +=`
+                <tr>
+                    <td>${Estacion}</td>
+                    <td>${HoraUpdate}</td>
+                    <td>${Temp}°C</td>
+                    <td>${Humedad}%</td>
+                    <td>${Estado}</td>
+                </tr>
+            `;
         });
+        document.getElementById('table-information-weather').innerHTML = table;
         document.getElementById('div-cards-weather').innerHTML = cards;
     }
 
